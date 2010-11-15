@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby -wKU
 
 filenom =  ARGV[0] 
-f = open(filenom+".tex", 'w')
-template = open("dTemplates/amsart.tex").read
+# currentdir = Dir.pwd # this gives me the current directory
+f = open( filenom + ".tex", 'w')
+template = open("/Users/carter/docTemplates/dTemplates/amsart.tex").read
 
 ENV["NEW_FILE_BASENAME"]=filenom
 ENV["YEAR"] = `date +%Y`.chomp
