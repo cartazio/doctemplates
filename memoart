@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby -wKU
+
+filenom =  ARGV[0] 
+# currentdir = Dir.pwd # this gives me the current directory
+f = open( filenom + ".tex", 'w')
+template = open("/Users/carter/docTemplates/dTemplates/memoart.tex").read
+
+ENV["NEW_FILE_BASENAME"]=filenom
+ENV["YEAR"] = `date +%Y`.chomp
+ENV["DATE"] = `date +%Y-%m-%d`.chomp
+
+# if ENV["TM_SOFT_TABS"] == "YES"
+#   tab_size = ENV["TM_TAB_SIZE"].to_i
+#   tab_size = tab_size ? tab_size : 4
+#   template = template.gsub(/\t/, " "*tab_size)
+# end
+
+template = template.gsub(/[$]\{([^}]+)\}/){|match| "#{ENV[$1]}" }
+f.write template
+f.close
+
+# #!/usr/bin/env sh 
+# export TM_NEW_FILE=$1
+# echo "\n" > $TM_NEW_FILE
+# if [[ ! -f "$TM_NEW_FILE" ]]; then
+#   export TM_YEAR=`date +%Y` \
+#   export TM_DATE=`date +%Y-%m-%d` \
+#    perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' \
+#       < amsart.tex > "$TM_NEW_FILE"
+# fi
