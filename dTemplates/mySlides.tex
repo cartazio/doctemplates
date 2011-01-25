@@ -53,7 +53,7 @@
 % \lfoot{}\cfoot{\thepage}\rfoot{}
 
 %math symbols
-\usepackage{amsthm}
+% \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
@@ -71,20 +71,20 @@
 
 
 % thm style defaults
-
-\theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{lemma}[theorem]{Lemma}
-
-\theoremstyle{definition}
-\newtheorem{conjecture}{Conjecture}[section]
-\newtheorem{definition}{Definition}[section]
-\newtheorem{example}{Example}[section]
-
-\theoremstyle{remark}
-\newtheorem{observation}{Observation}
-\newtheorem{remark}{Remark}
+% 
+% \theoremstyle{plain}
+% \newtheorem{theorem}{Theorem}[section]
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{lemma}[theorem]{Lemma}
+% 
+% \theoremstyle{definition}
+% \newtheorem{conjecture}{Conjecture}[section]
+% \newtheorem{definition}{Definition}[section]
+% \newtheorem{example}{Example}[section]
+% 
+% \theoremstyle{remark}
+% \newtheorem{observation}{Observation}
+% \newtheorem{remark}{Remark}
 
 %labelling aids
 \newcommand{\PropositionName}[1]{\label{prop:#1}}
@@ -92,10 +92,10 @@
 \newcommand{\TheoremName}[1]{\label{thm:#1}}
 \newcommand{\FigureName}[1]{\label{fig:#1}}
 
-\newcommand{\Proposition}[1]{Proposition~\ref{prop:#1}}
-\newcommand{\Lemma}[1]{Lemma~\ref{lma:#1}}
-\newcommand{\Theorem}[1]{Theorem~\ref{thm:#1}}
-\newcommand{\Figure}[1]{Figure~\ref{fig:#1}}
+\newcommand{\PropositionRef}[1]{Proposition~\ref{prop:#1}}
+\newcommand{\LemmaRef}[1]{Lemma~\ref{lma:#1}}
+\newcommand{\TheoremRef}[1]{Theorem~\ref{thm:#1}}
+\newcommand{\FigureRef}[1]{Figure~\ref{fig:#1}}
 
 \newcommand{\abs}[1]{\ensuremath{\vert #1 \vert }}
 \newcommand{\Abs}[1]{\ensuremath{\left \vert #1 \right \vert}}
@@ -167,13 +167,9 @@
 \title{My title}
 \author{Carter Tazio Schonwald}
 \date{${DATE}}
-\begin{abstract}
 
- to be filled in later
-
-\end{abstract}
 \maketitle
-\section{Part 1}
-
-
+\begin{frame}
+    
+\end{frame}
 \end{document}
