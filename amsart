@@ -9,6 +9,7 @@ ENV["NEW_FILE_BASENAME"]=filenom
 ENV["YEAR"] = `date +%Y`.chomp
 ENV["DATE"] = `date +%Y-%m-%d`.chomp
 ENV["REFNOTATION"] = open("/Users/carter/docTemplates/dTemplates/ref-notation.tex").read
+ENV["MATHNOTATION"]= open("/Users/carter/docTemplates/dTemplates/math-notation.tex").read
 # if ENV["TM_SOFT_TABS"] == "YES"
 #   tab_size = ENV["TM_TAB_SIZE"].to_i
 #   tab_size = tab_size ? tab_size : 4
