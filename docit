@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby -wKU
+
+require 'getoptlong'
+
+opts = GetoptLong.new(
+      [ '--help', '-h', GetoptLong::NO_ARGUMENT ],
+      [ '--name', '-n',GetoptLong::OPTIONAL_ARGUMENT ],
+      ['--type','-t',GetoptLong::OPTIONAL_ARGUMENT],
+      ['']
+    )
