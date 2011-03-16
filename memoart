@@ -11,6 +11,7 @@ ENV["DATE"] = `date +%Y-%m-%d`.chomp
 ENV["REFNOTATION"] = open("/Users/carter/docTemplates/dTemplates/ref-notation.tex").read
 ENV["MATHNOTATION"]= open("/Users/carter/docTemplates/dTemplates/math-notation.tex").read
 ENV["TEXTFONTS"]= open("/Users/carter/docTemplates/dTemplates/text-fonts.tex").read
+ENV["HYPER-STUFF"]= open("/Users/carter/docTemplates/dTemplates/hyper-stuff.tex").read
 # if ENV["TM_SOFT_TABS"] == "YES"
 #   tab_size = ENV["TM_TAB_SIZE"].to_i
 #   tab_size = tab_size ? tab_size : 4
