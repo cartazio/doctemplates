@@ -1,0 +1,8 @@
+\usepackage{datetime}
+\renewcommand{\dateseparator}{-}
+\settimeformat{ampmtime}
+ \newdateformat{fullisodate}{
+\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}, 
+ \shortdayofweekname{\THEDAY}{\THEMONTH}{\THEYEAR}\@ \currenttime}
+\newcommand{\now}{\fullisodate
+  \today  \usdate}
