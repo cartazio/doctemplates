@@ -13,7 +13,7 @@ ENV["MATHNOTATION"]= open("/Users/carter/docTemplates/dTemplates/math-notation.t
 ENV["TEXTFONTS"]= open("/Users/carter/docTemplates/dTemplates/text-fonts.tex").read
 ENV["HYPER-STUFF"]= open("/Users/carter/docTemplates/dTemplates/hyper-stuff.tex").read
 ENV["TIME-STUFF"]= open("/Users/carter/docTemplates/dTemplates/time-stuff.tex").read
-ENV["ALG-STUFF"]== open("/Users/carter/docTemplates/dTemplates/alg-notation.tex").read
+ENV["ALG-STUFF"]=open("/Users/carter/docTemplates/dTemplates/alg-notation.tex").read
 # if ENV["TM_SOFT_TABS"] == "YES"
 #   tab_size = ENV["TM_TAB_SIZE"].to_i
 #   tab_size = tab_size ? tab_size : 4
